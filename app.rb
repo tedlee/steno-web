@@ -1,7 +1,5 @@
 require "sinatra" 
 require "data_mapper"
-require "json"
-require "sinatra/contrib"
 require "jsonify"
 
 set :views, settings.root + '/views'
