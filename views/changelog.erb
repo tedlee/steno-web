@@ -1,0 +1,61 @@
+<!doctype html> 
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../styles/style.css" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+	<script src="../scripts/jquery.min.js"></script>
+
+	<title> <%= @title %> </title> 
+	<meta name="description" content="Steno" />
+	<meta name="keywords" content="" />
+</head>
+<body>
+
+	<div id="wrap">
+		<div id="main">
+			<div class="title">Steno</div>
+			<div id="logbox">
+
+				<div class="log-entry">
+					<div class="log-date">
+						January 25th 2013
+					</div>
+					<div class="log-description">
+						Added slider that will be used for scrubbing through time. The slider is also hooked up to a nice new "clock" that shows the current selected time. The slider isn't styled yet but it works. I've got to figure out a nice way to feed the time JSON data into the slider because we won't have data from every second. We'll have to make some design decisions here. Things to consider: should your location be interpreted and thus your time? For example: I talk to someone at home at 10AM. I don't talk to anyone else till I reach the coffee shop at 10:20AM. Where does my marker show up during this time? Should it show me as being halfway between home and the coffee shop at 10:10AM? Maybe it shouldn't be possible to select 10:10AM on the slider and only allow points that exist within the users data. This would be slightly more "jumpy" from a users perspective. Of course, if we could get second-by-second GPS data this decision would be moot. Oh, mobile battery life.
+					</div>
+				</div>
+
+				<div class="log-entry">
+					<div class="log-date">
+						January 24th 2013
+					</div>
+					<div class="log-description">
+						Pushed simple changelog page for keeping track and gauging progress. Also added a handy dandy footer bar. Tomorrow we tackle the slider.
+					</div>
+				</div>
+
+				<div class="log-entry">
+					<div class="log-date">
+						January 23rd 2013
+					</div>
+					<div class="log-description">
+						Worked on the web side of things building out the Sinatra app (mostly markup/JS) and implemented simple placemarker transitions using Google Maps 
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<ul>
+			<li><a href="/">Back to my Steno</a></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

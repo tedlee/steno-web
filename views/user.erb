@@ -1,0 +1,58 @@
+<!doctype html> 
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../styles/style.css" type="text/css" />
+	
+	<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="../scripts/jquery.min.js"></script>
+	<script src="../scripts/main.js"></script>
+	<script src="../scripts/moment.min.js"></script>
+
+
+	<script src="../scripts/jquery-ui-1.10.0.custom.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
+	<title> <%= @title %> </title> 
+	<meta name="description" content="Steno" />
+	<meta name="keywords" content="" />
+
+	<!-- Pass in username to JS -->
+	<script>
+		username = "<%= @user.username %>"
+	</script>
+
+</head>
+<body>
+
+
+	<div id="wrap">
+		<div id="main">
+			<div class="title">Steno</div>
+
+			<div id="map-container">
+			<div id="map"></div>
+			</div><!--end map-container-->
+
+			<div id="time"></div>
+
+			<div class="slider-box" id="slider"></div>
+
+			<div class="moments-box"></div>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<ul>
+			<li><a href="/changelog">Changelog</a></li>
+			<li>Steno</li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

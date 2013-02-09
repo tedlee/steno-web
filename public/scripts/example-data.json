@@ -1,0 +1,46 @@
+{
+    "user": "TedLee",
+	"steno_blobs":
+    		[   
+                {
+				    "blob":
+				        { "time": "1360163464", "transcription": ["Between 1968 and 1987, Cornell professor William T. Keeton and his colleagues released thousands of homing pigeons from different points in upstate New York", "then tracked them to see if they could find their way home."], "location": {"lat": 42.354066, "lon": -71.102626} }
+    		    },
+                {
+    			    "blob":
+				        { "time": "1360163528", "transcription": ["Homing pigeons are famously good navigators, and, for the most part, the pigeons set sail in the right direction", "But there was one route that caused them trouble", "A 74-mile stretch from the Jersey Hill fire tower back to their loft at Cornell.", "Only 10 percent of the pigeons trying to make that journey ever made it home.", "The rest -- about 900 pigeons -- disappeared completely."], "location": {"lat": 42.354478, "lon": -71.101457} }
+    		    },
+                {
+                    "blob":
+                        { "time": "1360163575", "transcription": ["Except, that is, on August 13, 1969. On that date, the pigeons released at Jersey Hill flew right back to Ithaca with no problems.", "Down on the ground, Keeton and his team took meticulous notes about the weather and whatever else they could notice.", "Nothing seemed different from any other day. They were mystified."], "location": {"lat": 42.354589, "lon": -71.101017} }
+                },
+                {
+                    "blob":
+                        { "time": "1360163602", "transcription": ["When Bill Keeton was first setting up his pigeon loft at Cornell, he got birds from local pigeon racers", "There was something going on at Jersey Hill, but what? And why was August 13, 1969, so special?"], "location": {"lat": 42.355406, "lon": -71.098313} }
+                },
+                {
+                    "blob":
+                        { "time": "1360163664", "transcription": ["Bird navigation is not well understood, and the hypothesized cues that birds use to make their maps", "gradients in inclination and intensity of the geomagnetic field, visual landmarks, or even atmospheric odors."], "location": {"lat": 42.355573, "lon": -71.097755} }
+                },
+                {
+                    "blob":
+                        { "time": "1360163814", "transcription": ["Keeton and his colleagues hoped that somewhere in that patch of upstate New York they'd be able to find something that was sending these pigeons astray.", "One possible clue: laboratory tests conducted in the '70s found that homing pigeons can detect what are known as infrasounds -- sounds at a frequency below the range of human perception."], "location": {"lat": 42.355723, "lon": -71.097326} }
+                },
+                {
+                    "blob":
+                        { "time": "1360163851", "transcription": ["The world is downright awash in infrasounds.", "They can come from anything: explosions, earthquakes, storms.", "But the infrasounds that may guide birds come from one place: the ocean. The Atlantic Ocean, whose coastline is some 200 miles from Ithaca, New York, is banging against the floor of the deep sea, and that energy travels through the continent."], "location": {"lat": 42.355842, "lon": -71.096876} }
+                },
+                {
+                    "blob":
+                        { "time": "1360163991", "transcription": ["The pulsing land acts like the cone of a stereo speaker, creating a pressure wave -- infrasound -- that birds would be able to hear.", "Unlike the sounds humans hear, infrasounds can travel thousands of miles in the atmosphere. For example, a tone at 1000 Hz is 90 percent absorbed over a distance of seven kilometers at sea level."], "location": {"lat": 42.356064, "lon": -71.096221} }
+                },
+                {
+                    "blob":
+                        { "time": "1360164244", "transcription": ["Using a software program called HARPA (Hamiltonian Acoustic Ray-tracing Program for the Atmosphere), Hagstrum was able to model the infrasound landscape for Jersey Hill, taking into account the topography of the place and the particular atmospheric conditions at the times of the releases.", "Hagstrum looked at the infrasound waves as they would travel from the Cornell loft to Jersey Hill and he found something very strange: Infrasound waves coming from Ithaca and heading westward skipped right over Jersey Hill, as he reports in his paper"], "location": {"lat": 42.356286, "lon": -71.095631} }
+                },
+                {
+                    "blob":
+                        { "time": "1360164686", "transcription": [" For the birds of the Cornell loft, Jersey Hill was in an acoustic shadow zone.", " For the birds of the Cornell loft, Jersey Hill was in an acoustic shadow zone."], "location": {"lat": 42.356667, "lon": -71.094376} }
+                }
+    		]
+}
