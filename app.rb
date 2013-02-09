@@ -104,7 +104,7 @@ post "/users" do
     end
 
     Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
-    json "username" => username, "timestamp" => timestamp, "lat" => lat, "lon" => lon, "transcription" => transcription
+    #json "username" => username, "timestamp" => timestamp, "lat" => lat, "lon" => lon, "transcription" => transcription
 end
 
 # generates the webpage
