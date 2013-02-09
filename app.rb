@@ -62,7 +62,7 @@ end
 
 # API spec has been outlined here http://www.stypi.com/tedlee/Steno/api_spec.json
 
-post "/users" do
+post "/api/users" do
 
     # Creates a data hash
     data = JSON.parse(request.body.read)
