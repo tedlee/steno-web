@@ -101,9 +101,11 @@ post "/api/users" do
         # Get best ranked transcription result
         transcription = blob["blob"]["transcription"][0]
 
+        Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
+
     end
 
-    Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
+    #Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
     #json "username" => username, "timestamp" => timestamp, "lat" => lat, "lon" => lon, "transcription" => transcription
 end
 
