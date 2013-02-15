@@ -1,6 +1,8 @@
 require "sinatra" 
 require "data_mapper"
 require "jsonify"
+require "json"
+require "sinatra/contrib"
 
 set :views, settings.root + '/views'
 
@@ -105,7 +107,7 @@ post "/api/users" do
 
     end
 
-    #Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
+    json "success" => "true"
     #json "username" => username, "timestamp" => timestamp, "lat" => lat, "lon" => lon, "transcription" => transcription
 end
 
