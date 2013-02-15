@@ -68,6 +68,7 @@ post "/api/users" do
 
     # Creates a data hash
     data = JSON.parse(request.body.read)
+    #puts data
  
     # Gets username
     username = data['user']
@@ -76,12 +77,12 @@ post "/api/users" do
     
 
     if @user
-        puts @user.username
-        puts @user.moments
+        #puts @user.username
+        #puts @user.moments
     else
         User.create(:username => username, :created_at => Time.now)
         @user = User.first(:username => username) 
-        puts @user
+        #puts @user
     end
 
     timestamp = 0
@@ -91,17 +92,19 @@ post "/api/users" do
 
     data['steno_blobs'].each do |blob|
 
+        #puts blob
         # Gets blob timestamp
-        timestamp = blob["blob"]["timestamp"]
+        timestamp = blob['blob']["timestamp"]
 
         # Gets blob latitude
-        lat = blob["blob"]["lat"]
+        lat = blob['blob']["lat"]
 
         # Gets blob longitude
-        lon = blob["blob"]["lon"]
+        lon = blob['blob']["lon"]
 
         # Get best ranked transcription result
-        transcription = blob["blob"]["transcription"][0]
+        transcription = blob['blob']["transcription"][0]
+        puts transcription
 
         Moment.create(:timestamp => timestamp, :lat => lat, :lon => lon, :transcription => transcription, :created_at => Time.now, :user_username => @user.username)
 
